@@ -19,7 +19,6 @@ class DetailPage extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot<Post> snapshot) {
           if (snapshot.hasData) {
             Post detail = snapshot.data!;
-
             return SingleChildScrollView(
               padding: EdgeInsets.all(16),
               child: Column(
@@ -79,7 +78,6 @@ class DetailPage extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                // Tambahkan nomor ayat di sini
                                 Text(
                                   "Ayat ${ayat.nomor}",
                                   style: TextStyle(
